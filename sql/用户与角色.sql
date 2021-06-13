@@ -5,6 +5,9 @@ CREATE TABLE t_role(
 	UNIQUE unq_role(role)
 ) COMMENT = "角色表";
 
+# 创建角色表的历史表
+CREATE TABLE t_user_history LIKE t_user;
+
 
 # 用户表
 CREATE TABLE t_user(
